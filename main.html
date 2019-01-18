@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <html lane='en'>
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Progress Bar</title>
+   </head>
+   <body>
+    <div class="content">
+        <div class="content__progress-bar" id="progress-bar" >
+            <svg width="300px" height="300px">
+              <path id="arc" fill="none" stroke="rgb(163, 75, 245)" stroke-width="20" />
+            </svg>
+        </div>
+        <div class="content__input-group"> 
+           <div class="content__range">
+              <input id="angle" value="100" onInput="handleValue()"/>
+              <span>Value</span>
+           </div>
+           <div class="content__checkbox-group">
+              <div class="content__checkbox-group__element"> 
+                 <input type="checkbox" id="animation" name ="animation" onClick="animateProgressBar(this)" />
+                 <span id="title">Animate</span>
+              </div>
+              <div class="content__checkbox-group__element"> 
+                 <input type="checkbox" id="hide" name ="hide" onClick="hideProgressBar(this)" />
+                 <span id="title">Hide</span>
+              </div>   
+           </div>
+        </div>
+      </div>  
+   </body>
+    <script src="main.js"></script>
+ </html>
